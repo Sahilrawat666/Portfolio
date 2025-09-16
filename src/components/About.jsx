@@ -117,9 +117,10 @@ function About() {
                   Technical Skills
                 </h3>
                 <p className="mt-1">
-                  MERN Stack, HTML5, CSS3, JavaScript, Tailwind CSS, Bootstrap,
-                  jQuery, Media Queries, Responsive Web Design, Git/GitHub,
-                  Postman API, Vercel, Netlify, Render.
+                  HTML5, CSS3, JavaScript, Tailwind CSS, Bootstrap, jQuery,
+                  Media Queries, Responsive Web Design React.js, Node.js,
+                  express.js, MongoDB, MERN Stack, Git/GitHub, Postman API,
+                  Vercel, Netlify, Render.
                 </p>
               </div>
             </div>

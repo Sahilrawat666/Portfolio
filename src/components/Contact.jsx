@@ -43,7 +43,7 @@ function Contact() {
         {/* Social Links */}
         <div className="flex items-center gap-6 mt-6">
           <motion.a
-            href="https://www.linkedin.com/in/sahil-rawat/"
+            href="https://www.linkedin.com/in/sahil-rawat25?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noreferrer"
             className="text-gray-700 text-3xl"

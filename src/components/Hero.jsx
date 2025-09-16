@@ -6,9 +6,9 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center bg-gradient-to-br from-gray-50 via-white to-gray-100"
+      className="min-h-screen flex items-center bg-gradient-to-br from-gray-50 via-white to-gray-100 "
     >
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-22 lg:mt-0">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -81,9 +81,11 @@ function Hero() {
         >
           <div className="w-full max-w-sm rounded-2xl shadow-xl bg-white p-8 transform hover:-translate-y-2 transition-transform duration-500">
             <img
-              // src={profile}
+              src="/sahil-1.jpeg"
               alt="Sahil"
-              className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-emerald-100 shadow"
+              className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-emerald-100 shadow 
+              
+             transform transition-transform duration-500 hover:scale-110 "
             />
             <h3 className="mt-4 text-center text-lg font-semibold text-gray-800">
               Sahil Rawat
@@ -106,7 +108,7 @@ function Hero() {
             {/* Project Links */}
             <div className="mt-5 flex justify-center gap-6">
               <a
-                href="https://github.com/Sahilrawat666/bookstore-app.git"
+                href="https://Bookstore-sr.vercel.app"
                 target="_blank"
                 rel="noreferrer"
                 className="text-sm text-emerald-600 hover:underline transition-all duration-300"
@@ -114,7 +116,7 @@ function Hero() {
                 Bookstore
               </a>
               <a
-                href="https://github.com/Sahilrawat666/blog-app.git"
+                href="https://blog-application-sr.vercel.app"
                 target="_blank"
                 rel="noreferrer"
                 className="text-sm text-emerald-600 hover:underline transition-all duration-300"

@@ -18,8 +18,8 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full shadow-md bg-slate-100/90 backdrop-blur-md z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <nav className="fixed top-0 left-0 w-full shadow-md bg-slate-100/90 backdrop-blur-md z-50 ">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-2 lg:py-4">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10 rounded-full bg-emerald-700 flex items-center justify-center">
@@ -46,7 +46,7 @@ function Navbar() {
 
         {/* Mobile Hamburger */}
         <div
-          className="md:hidden text-2xl cursor-pointer text-slate-700"
+          className="md:hidden lg:text-2xl text-xl cursor-pointer text-slate-700"
           onClick={toggleMenu}
         >
           {isOpen ? <FaTimes /> : <FaBars />}
