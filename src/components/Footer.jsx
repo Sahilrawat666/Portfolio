@@ -3,23 +3,22 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-10 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer className="bg-gray-900 text-gray-300 py-10 px-6">
+      <div className="max-w-6xl mx-auto flex flex-col items-center gap-8">
         {/* Brand / Name */}
-        <div className="text-center md:text-left">
-          <h3 className="text-xl font-bold text-white">Sahil Rawat</h3>
+        <div className="text-center">
+          <h3 className="text-2xl font-bold text-white">Sahil Rawat</h3>
           <p className="text-gray-400">Full Stack Developer</p>
         </div>
 
         {/* Quick Links */}
-        <div className="flex flex-col md:flex-row gap-6 text-center md:text-left">
+        <div className="flex flex-wrap justify-center gap-8 text-sm font-medium">
           <a href="#/" className="hover:text-emerald-400 transition">
             Home
           </a>
           <a href="/about" className="hover:text-emerald-400 transition">
             About
           </a>
-
           <a href="#projects" className="hover:text-emerald-400 transition">
             Projects
           </a>
@@ -29,7 +28,7 @@ function Footer() {
         </div>
 
         {/* Social Links */}
-        <div className="flex gap-4 text-2xl">
+        <div className="flex gap-6 text-2xl">
           <a
             href="https://github.com/Sahilrawat666"
             target="_blank"
@@ -39,7 +38,7 @@ function Footer() {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/sahil-rawat25?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            href="https://www.linkedin.com/in/sahil-rawat25"
             target="_blank"
             rel="noreferrer"
             className="hover:text-blue-500 transition"
@@ -53,11 +52,11 @@ function Footer() {
             <FaEnvelope />
           </a>
         </div>
-      </div>
 
-      {/* Copyright */}
-      <div className="mt-8 text-center text-gray-500 text-sm">
-        &copy; {new Date().getFullYear()} Sahil Rawat. All rights reserved.
+        {/* Copyright */}
+        <div className="pt-4 border-t border-gray-700 w-full text-center text-gray-500 text-sm">
+          &copy; {new Date().getFullYear()} Sahil Rawat. All rights reserved.
+        </div>
       </div>
     </footer>
   );
