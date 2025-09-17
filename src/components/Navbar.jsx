@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,11 +14,11 @@ function Navbar() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
+    // { name: "Contact", href: "/contact" },
   ];
 
   return (
-    <nav className="fixed  top-0 left-0 w-full shadow-md bg-slate-100/90 backdrop-blur-md z-50 ">
+    <nav className="fixed top-0 left-0 w-full shadow-md bg-slate-100/90 backdrop-blur-md z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-2 lg:py-4">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -35,7 +35,7 @@ function Navbar() {
           {navLinks.map((link) => (
             <motion.li
               key={link.name}
-              whileHover={{ scale: 1.1, color: "#10B981" }} // Emerald hover color
+              whileHover={{ scale: 1.1, color: "#10B981" }}
               whileTap={{ scale: 0.95 }}
               className="cursor-pointer transition-colors"
             >
@@ -53,22 +53,30 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <ul className="md:hidden flex flex-col items-center bg-slate-50/95 backdrop-blur-md space-y-6 py-6 text-lg font-medium text-slate-700">
-          {navLinks.map((link) => (
-            <motion.li
-              key={link.name}
-              whileHover={{ scale: 1.05, color: "#10B981" }}
-              whileTap={{ scale: 0.95 }}
-              className="cursor-pointer transition-colors"
-              onClick={toggleMenu}
-            >
-              <a href={link.href}>{link.name}</a>
-            </motion.li>
-          ))}
-        </ul>
-      )}
+      {/* Mobile Menu with animation */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.ul
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="md:hidden flex flex-col items-center bg-slate-50/95 backdrop-blur-md space-y-6 py-6 text-lg font-medium text-slate-700"
+          >
+            {navLinks.map((link) => (
+              <motion.li
+                key={link.name}
+                whileHover={{ scale: 1.05, color: "#078537ff" }}
+                whileTap={{ scale: 0.95 }}
+                className="cursor-pointer transition-colors"
+                onClick={toggleMenu}
+              >
+                <a href={link.href}>{link.name}</a>
+              </motion.li>
+            ))}
+          </motion.ul>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }

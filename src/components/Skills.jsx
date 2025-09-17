@@ -40,7 +40,7 @@ function Skills() {
       },
       { name: "Vite + React", icon: <SiVite className="text-purple-500" /> },
       { name: "ShadCN", icon: <SiShadcnui className="text-black" /> },
-      { name: "jQuery", icon: <SiJquery className="text-blue-600" /> },
+      // { name: "jQuery", icon: <SiJquery className="text-blue-600" /> },
       { name: "Bootstrap", icon: <SiBootstrap className="text-purple-500" /> },
       {
         name: "Tailwind CSS",
@@ -76,7 +76,7 @@ function Skills() {
         {/* Heading */}
         <h2 className="text-3xl w-full mx-auto md:text-4xl font-extrabold text-gray-800 text-center relative inline-block">
           My Skills
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></span>
+          {/* <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></span> */}
         </h2>
 
         <p className="mt-5 text-gray-600 text-center max-w-2xl mx-auto text-xl leading-relaxed">
