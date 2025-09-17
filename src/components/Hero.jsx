@@ -73,7 +73,7 @@ function Hero() {
         </motion.div>
 
         {/* Right - Profile Card */}
-        <motion.div
+        <div
           className="flex justify-center md:justify-end "
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -125,7 +125,7 @@ function Hero() {
               </a>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

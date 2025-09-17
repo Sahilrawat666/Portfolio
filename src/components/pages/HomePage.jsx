@@ -4,6 +4,7 @@ import Hero from "../Hero";
 import Skills from "../Skills";
 import Footer from "../Footer";
 import Contact from "../Contact";
+import ChatBox from "../Chatbox";
 
 function HomePage() {
   return (
@@ -11,6 +12,7 @@ function HomePage() {
       <Navbar />
       <Hero />
       <Skills />
+      <ChatBox />
       <Contact />
       <Footer />
     </div>
