@@ -24,11 +24,12 @@ function Hero() {
           <p className="mt-3 text-lg text-gray-700">Full Stack Developer</p>
 
           <p className="mt-5 text-base text-gray-600 max-w-xl leading-relaxed">
-            I'm a Full Stack Web Developer specializing in the{" "}
-            <span className="font-semibold">MERN stack</span>. I create
-            responsive, user-friendly web applications, focusing on clean code,
-            modern design, and seamless user experience. I enjoy building
-            scalable projects and learning new web technologies.
+            I am a passionate Full Stack Web Developerspecializing in the{" "}
+            <span className="font-semibold">MERN stack</span>. I build
+            responsive, high-performance web applications with a focus on clean
+            code, modern design, and intuitive user experiences. I enjoy
+            creating scalable projects, solving complex problems, and
+            continuously learning the latest web technologies.
           </p>
 
           {/* Buttons */}
