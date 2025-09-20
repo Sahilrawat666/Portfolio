@@ -1,53 +1,101 @@
 import React, { useState, useEffect } from "react";
 import { Mail, MessageCircle, Linkedin } from "lucide-react";
+import { FaEnvelope, FaWhatsapp, FaLinkedin, FaPhone } from "react-icons/fa"; // ✅ brand icons
 
 function ChatBox() {
   const [isOpen, setIsOpen] = useState(true);
   const [messages, setMessages] = useState([]);
 
   const initialMessages = [
-    <div className="bg-gray-100 p-3 rounded-lg" key="welcome">
-      <p className="font-medium">Have Questions? Contact Me!</p>
+    <div className="flex items-start space-x-3" key="welcome">
+      <img
+        src="/sahil-1.jpeg"
+        alt="Sahil"
+        className="w-8 h-8  rounded-full object-cover border"
+      />
+      <div className="bg-gray-100 p-3 rounded-lg max-w-[80%]">
+        <p className="font-medium">Have Questions? Contact Me!</p>
+      </div>
     </div>,
 
-    <div className="bg-gray-100 p-3 rounded-lg" key="email">
-      <p className="mb-1">Get in Touch via Email.</p>
-      <a
-        href="mailto:sr4328914@gmail.com"
-        className="text-emerald-600 underline flex items-center space-x-2"
-      >
-        <Mail size={16} />
-        <span>sr4328914@gmail.com</span>
-      </a>
+    <div className="flex items-start space-x-3" key="email">
+      <img
+        src="/sahil-1.jpeg"
+        alt="Sahil"
+        className="w-8 h-8 mt-2  rounded-full object-cover border"
+      />
+      <div className="bg-gray-100 p-3 rounded-lg max-w-[80%]">
+        <p className="mb-1">Get in Touch via Email.</p>
+        <a
+          href="mailto:sr4328914@gmail.com"
+          className="flex items-center space-x-2  font-medium"
+        >
+          <FaEnvelope className=" text-lg" />
+          <span className="text-blue-800">sr4328914@gmail.com</span>
+        </a>
+      </div>
     </div>,
 
-    <div className="bg-gray-100 p-3 rounded-lg" key="whatsapp">
-      <p className="mb-1">Drop Me a Message on WhatsApp.</p>
-      <a
-        href="https://wa.me/917819099116"
-        target="_blank"
-        rel="noreferrer"
-        className="flex items-center space-x-2 text-emerald-600 underline"
-      >
-        <MessageCircle size={16} />
-        <span>Chat Now</span>
-      </a>
+    <div className="flex items-start space-x-3" key="whatsapp">
+      <img
+        src="/sahil-1.jpeg"
+        alt="Sahil"
+        className="w-8 h-8 mt-2 rounded-full object-cover border"
+      />
+      <div className="bg-gray-100 p-3 rounded-lg max-w-[80%]">
+        <p className="mb-1">Drop Me a Message on WhatsApp.</p>
+        <a
+          href="https://wa.me/917819099116"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center space-x-2  font-medium"
+        >
+          <FaWhatsapp className="text-green-600 text-lg" />
+          <span>Chat Now</span>
+        </a>
+      </div>
     </div>,
 
-    <div className="bg-gray-100 p-3 rounded-lg" key="linkedin">
-      <p className="mb-1">
-        Have an idea or opportunity? Let's connect on LinkedIn and make it
-        happen.
-      </p>
-      <a
-        href="https://www.linkedin.com/in/sahil-rawat"
-        target="_blank"
-        rel="noreferrer"
-        className="flex items-center space-x-2 text-emerald-600 underline"
-      >
-        <Linkedin size={16} />
-        <span>LinkedIn</span>
-      </a>
+    <div className="flex items-start space-x-3" key="linkedin">
+      <img
+        src="/sahil-1.jpeg"
+        alt="Sahil"
+        className="w-8 h-8 mt-2 mt-2   rounded-full object-cover border"
+      />
+      <div className="bg-gray-100 p-3 rounded-lg max-w-[80%]">
+        <p className="mb-1">
+          Have an idea or opportunity? Let's connect on LinkedIn and make it
+          happen.
+        </p>
+        <a
+          href="https://www.linkedin.com/in/sahil-rawat"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center space-x-2  font-medium"
+        >
+          <FaLinkedin className="text-blue-600 text-lg" />
+          <span className="text-blue-800">LinkedIn</span>
+        </a>
+      </div>
+    </div>,
+    <div className="flex items-start space-x-3" key="whatsapp">
+      <img
+        src="/sahil-1.jpeg"
+        alt="Sahil"
+        className="w-8 h-8 mt-2 rounded-full object-cover border"
+      />
+      <div className="bg-gray-100 p-3 rounded-lg max-w-[80%]">
+        <p className="mb-1">Get in touch by phone.</p>
+        <a
+          href="https://wa.me/917819099116"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center space-x-2  font-medium"
+        >
+          <FaPhone className="text-black-600 text-lg" />
+          <span className="text-blue-800">+91-7819099116</span>
+        </a>
+      </div>
     </div>,
   ];
 
