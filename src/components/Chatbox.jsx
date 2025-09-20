@@ -146,12 +146,12 @@ function ChatBox() {
           onClick={() => setIsOpen(true)}
           className="flex items-center cursor-pointer space-x-2 bg-white rounded-full shadow-lg p-2 hover:shadow-xl transition-shadow"
         >
+          <span className="text-gray-700 font-medium">Get in touch</span>
           <img
             src="/sahil-1.jpeg"
             alt="Sahil"
             className="w-10 h-10 rounded-full object-cover border-2 border-emerald-500"
           />
-          <span className="text-gray-700 font-medium">Get in touch</span>
         </div>
       )}
     </div>
