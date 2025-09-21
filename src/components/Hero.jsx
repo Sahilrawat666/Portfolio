@@ -41,7 +41,7 @@ function Hero() {
               View Projects
             </a>
             <a
-              href="/contact"
+              href="#contact"
               className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#2dd4bf]  to-[#1f2937] text-white font-medium shadow hover:opacity-90 hover:-translate-y-1 transition-all duration-300"
             >
               Contact Me
