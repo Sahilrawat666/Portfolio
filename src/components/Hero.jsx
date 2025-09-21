@@ -35,14 +35,14 @@ function Hero() {
           {/* Buttons */}
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="#projects"
+              href="/projects"
               className="px-5 py-2.5 rounded-xl border border-emerald-600 text-emerald-600 font-medium bg-white shadow hover:-translate-y-1 hover:shadow-md transition-transform duration-300"
             >
               View Projects
             </a>
             <a
-              href="#contact"
-              className="px-5 py-2.5 rounded-xl bg-emerald-600 text-white font-medium shadow hover:opacity-90 hover:-translate-y-1 transition-all duration-300"
+              href="/contact"
+              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#2dd4bf]  to-[#1f2937] text-white font-medium shadow hover:opacity-90 hover:-translate-y-1 transition-all duration-300"
             >
               Contact Me
             </a>
@@ -50,7 +50,7 @@ function Hero() {
               href="/Resume-Sahil-Rawat.pdf"
               download
               target="_blank"
-              className="px-5 py-2.5 rounded-xl border text-gray-700 bg-white shadow hover:bg-gray-100 hover:-translate-y-1 transition-all duration-300"
+              className="px-5 py-2.5 rounded-xl border text-gray-700 bg-white shadow hover:bg-gray-200 hover:-translate-y-1 transition-all duration-300"
             >
               Download Resume
             </a>

@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10 px-6">
+    <footer className="bg-gradient-to-r from-[#0f172a]  to-[#334155] text-gray-300 py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-8">
         {/* Brand / Name */}
         <div className="text-center">
