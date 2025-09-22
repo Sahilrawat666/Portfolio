@@ -33,14 +33,12 @@ function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-slate-700 font-medium">
           {navLinks.map((link) => (
-            <motion.li
+            <li
               key={link.name}
-              whileHover={{ scale: 1.1, color: "#10B981" }}
-              whileTap={{ scale: 0.95 }}
-              className="cursor-pointer transition-colors"
+              className="hover:scale-110 active:scale-90  duration-200 hover:text-[#10B981]"
             >
               <a href={link.href}>{link.name}</a>
-            </motion.li>
+            </li>
           ))}
         </ul>
 

@@ -30,7 +30,7 @@ function Footer() {
             href="https://github.com/Sahilrawat666"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-white transition"
+            className="hover:scale-110 active:scale-90  duration-200"
           >
             <FaGithub />
           </a>
@@ -38,13 +38,13 @@ function Footer() {
             href="https://www.linkedin.com/in/sahil-rawat25"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-blue-500 transition"
+            className="hover:scale-110 active:scale-90  duration-200"
           >
             <FaLinkedin />
           </a>
           <a
             href="mailto:sr4328914@gmail.com"
-            className="hover:text-red-500 transition"
+            className="hover:scale-110 active:scale-90  duration-200 "
           >
             <FaEnvelope />
           </a>
