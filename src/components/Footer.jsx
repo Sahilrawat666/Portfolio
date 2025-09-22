@@ -13,13 +13,22 @@ function Footer() {
 
         {/* Quick Links */}
         <div className="flex flex-wrap justify-center gap-8 text-sm font-medium">
-          <a href="/" className="hover:text-emerald-400 transition">
+          <a
+            href="/"
+            className="hover:text-emerald-400 hover:scale-110 active:scale-90  duration-200"
+          >
             Home
           </a>
-          <a href="/about" className="hover:text-emerald-400 transition">
+          <a
+            href="/about"
+            className="hover:text-emerald-400 hover:scale-110 active:scale-90  duration-200"
+          >
             About
           </a>
-          <a href="/projects" className="hover:text-emerald-400 transition">
+          <a
+            href="/projects"
+            className="hover:text-emerald-400 hover:scale-110 active:scale-90  duration-200"
+          >
             Projects
           </a>
         </div>
