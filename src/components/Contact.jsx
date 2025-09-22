@@ -30,12 +30,12 @@ function Contact() {
         {/* Send Message Button */}
         <motion.a
           href="mailto:sr4328914@gmail.com"
-          className="mt-6 bg-gradient-to-r from-[#0f172a] to-[#334155] text-white font-semibold rounded-lg px-5 py-3  transition-all duration-00 hover:from-[#1e2333] hover:to-[#475569]"
+          className="mt-6 bg-gradient-to-r from-[#0f172a] to-[#334155] text-white font-semibold rounded-lg px-5 py-3  "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 1 }}
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 300 }}
         >
           Send Message
         </motion.a>

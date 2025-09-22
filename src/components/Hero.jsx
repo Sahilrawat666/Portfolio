@@ -15,8 +15,8 @@ function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-sm uppercase tracking-wide text-gray-500">
-            Hello, I&apos;m
+          <p className="text-md font-semibold uppercase tracking-wide text-gray-500">
+            Hello, I'M
           </p>
           <h1 className="mt-2 text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight">
             Sahil <span className="text-emerald-600">Rawat</span>
