@@ -105,6 +105,7 @@ function Hero() {
               <div>
                 <strong>Certification:</strong> Full Stack Web Development —
                 DICE Academy
+                <span className="text-gray-400 italic"> (Diploma)</span>
               </div>
             </div>
 
