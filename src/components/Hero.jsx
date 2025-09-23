@@ -59,16 +59,16 @@ function Hero() {
           {/* Info */}
           <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:gap-12 text-sm text-gray-600">
             <div>
-              <div className="text-xs text-gray-500">Location</div>
-              <div>Munirka, New Delhi</div>
+              <div className="text-xs text-gray-500 ">Location</div>
+              <div className="whitespace-nowrap">Munirka, New Delhi</div>
             </div>
             <div>
               <div className="text-xs text-gray-500">Email</div>
-              <div className="break-all">sr4328914@gmail.com</div>
+              <div className="whitespace-nowrap">sr4328914@gmail.com</div>
             </div>
             <div>
               <div className="text-xs text-gray-500">Phone</div>
-              <div>+91 7819099116</div>
+              <div className=" whitespace-nowrap">+91 7819099116</div>
             </div>
           </div>
         </motion.div>
@@ -92,7 +92,9 @@ function Hero() {
               Sahil Rawat
             </h3>
             <p className="text-center text-sm text-gray-500">
-              BCA Student • Full Stack Developer
+              BCA Student{" "}
+              <span className="text-gray-500 italic">(final year)</span> • Full
+              Stack Developer
             </p>
 
             <div className="mt-5 space-y-2 text-sm text-gray-700">

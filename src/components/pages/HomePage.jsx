@@ -13,7 +13,6 @@ function HomePage() {
       <Hero />
       <Skills />
       <ChatBox />
-
       <Contact />
       <Footer />
     </div>

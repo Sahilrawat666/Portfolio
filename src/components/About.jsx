@@ -52,7 +52,8 @@ function About() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900">
-                  Full Stack Web Development
+                  Full Stack Web Development{" "}
+                  <span className="text-gray-400 italic">(Diploma)</span>
                 </h3>
                 <p> 2025 | DICE Academy — Completed</p>
               </div>
@@ -73,7 +74,10 @@ function About() {
             whileHover={{ scale: 1.03 }}
           >
             <h2 className="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-emerald-600 pb-2">
-              Experience
+              Experience{" "}
+              <span className="text-gray-500 italic text-[18px]">
+                (Fresher)
+              </span>
             </h2>
             <div className="space-y-4 text-gray-700">
               <div>

@@ -23,7 +23,12 @@ function Navbar() {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10 rounded-full bg-emerald-700 flex items-center justify-center">
-            <span className="text-white font-bold text-lg">S</span>
+            {/* <span className="text-white font-bold text-lg">S</span> */}
+            <img
+              src="/sahil-1.jpeg"
+              alt="img"
+              className="text-white font-bold text-lg rounded-[50%]"
+            />
           </div>
           <span className="text-xl font-semibold text-slate-800 tracking-wide">
             Sahil
