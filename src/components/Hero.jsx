@@ -93,7 +93,7 @@ function Hero() {
             </h3>
             <p className="text-center text-sm text-gray-500">
               BCA Student{" "}
-              <span className="text-gray-500 italic">(final year)</span> • Full
+              <span className="text-gray-400 italic">(final year)</span> • Full
               Stack Developer
             </p>
 
