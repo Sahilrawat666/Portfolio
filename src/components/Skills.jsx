@@ -95,7 +95,7 @@ function Skills() {
                 {skills.map((skill, index) => (
                   <div
                     key={index}
-                    className="group flex flex-row items-center justify-between    items-center justify-center p-1 md:p-4 bg-white rounded-2xl shadow-md border border-gray-100 hover:border-black-300 hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+                    className="group flex flex-row    items-center justify-center p-1 md:p-4 bg-white rounded-2xl shadow-md border border-gray-100 hover:border-black-300 hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer"
                   >
                     <div className="  text-2xl md:text-3xl  transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6">
                       {skill.icon}

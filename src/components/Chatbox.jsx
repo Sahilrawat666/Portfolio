@@ -60,7 +60,7 @@ function ChatBox() {
       <img
         src="/sahil-1.jpeg"
         alt="Sahil"
-        className="w-8 h-8 mt-2 mt-2   rounded-full object-cover border"
+        className="w-8 h-8  mt-2   rounded-full object-cover border"
       />
       <div className="bg-gray-100 p-3 rounded-lg max-w-[80%]">
         <p className="mb-1">
@@ -68,7 +68,7 @@ function ChatBox() {
           happen.
         </p>
         <a
-          href="https://www.linkedin.com/in/sahil-rawat"
+          href="https://www.linkedin.com/in/sahil-rawat25"
           target="_blank"
           rel="noreferrer"
           className="flex items-center space-x-2  font-medium"
