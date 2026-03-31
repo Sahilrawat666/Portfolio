@@ -11,7 +11,24 @@ function Projects() {
       img: "/bookstore-i.png", // put your project image in public folder
       live: "https://bookstore-sr.vercel.app",
       github: "https://github.com/Sahilrawat666/bookstore.git",
-      tags: ["React", "MongoDB", "Express", "Node.js"],
+      tags: ["React.js", "MongoDB", "Express.js", "Node.js", "jwt", "Tailwind"],
+    },
+    {
+      title: "Task Manager App",
+      description:
+        "A full-stack MERN task manager app with user authentication, task creation, deletion, and filtering by status and importance. Built with React, TailwindCSS, Vite, Node.js, Express, and MongoDB.",
+      img: "/taskmanager-i.png", // Add a screenshot in your public folder
+      live: "https://taskmanager-sr.vercel.app", // Live demo link
+      github: "https://github.com/Sahilrawat666/task_manager_app", // GitHub repo
+      tags: [
+        "React.js",
+        "Tailwind",
+        "Vite",
+        "Node.js",
+        "MongoDB",
+        "Express.js",
+        "jwt",
+      ],
     },
     {
       title: "Blog Application",
@@ -23,6 +40,7 @@ function Projects() {
       tags: ["React", "Express", "MongoDB", "JWT"],
       inProgress: true,
     },
+
     {
       title: "Portfolio Website",
       description:
