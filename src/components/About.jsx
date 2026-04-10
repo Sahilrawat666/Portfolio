@@ -89,6 +89,8 @@ function About() {
                   MERN stack:
                 </p>
                 <ul className="list-disc list-inside mt-2 space-y-1">
+                  {/* bookstore application  */}
+
                   <li>
                     <span className="font-semibold">Bookstore App:</span> A
                     full-featured e-commerce platform built with MERN stack.
@@ -105,6 +107,18 @@ function About() {
                       Live Demo
                     </a>
                   </li>
+                  <li>
+                    {/* task manager */}
+                    <span className="font-semibold">Task Manager App:</span> A
+                    full-stack task management application built using the MERN
+                    stack with secure authentication and full CRUD
+                    functionality. Users can create, update, and delete tasks,
+                    track status (To Do, In Progress, Completed), and manage
+                    workflows through a clean and responsive interface. Focused
+                    on RESTful APIs and efficient state management.
+                  </li>
+
+                  {/* blog application */}
                   <li>
                     <span className="font-semibold">Blog App:</span> Currently
                     developing a full-stack blogging platform using the MERN

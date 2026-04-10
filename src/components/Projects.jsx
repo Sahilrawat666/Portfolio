@@ -8,7 +8,7 @@ function Projects() {
       title: "Bookstore App",
       description:
         "A full-featured e-commerce platform built with MERN stack. Users can register/login, browse books by category, add favorites, and manage a personal wishlist. Integrated secure authentication, dynamic book listings, and responsive UI for mobile and desktop. Deployed on Vercel.",
-      img: "/bookstore-i.png", // put your project image in public folder
+      img: "/bookstore-i.png",
       live: "https://bookstore-sr.vercel.app",
       github: "https://github.com/Sahilrawat666/bookstore.git",
       tags: ["React.js", "MongoDB", "Express.js", "Node.js", "jwt", "Tailwind"],
@@ -16,8 +16,8 @@ function Projects() {
     {
       title: "Task Manager App",
       description:
-        "A full-stack MERN task manager app with user authentication, task creation, deletion, and filtering by status and importance. Built with React, TailwindCSS, Vite, Node.js, Express, and MongoDB.",
-      img: "/taskmanager-i.png", // Add a screenshot in your public folder
+        "Built a task management application with authentication and dynamic task tracking features. Implements full CRUD operations, allowing users to create, read, update, and delete tasks efficiently. Users can update task status (e.g., To Do, In Progress, Completed) and manage their workflow through an intuitive interface. Developed using MongoDB, Express, React, and Node.js with Tailwind CSS for styling.",
+      img: "/taskmanager-i.png",
       live: "https://taskmanager-sr.vercel.app", // Live demo link
       github: "https://github.com/Sahilrawat666/task_manager_app", // GitHub repo
       tags: [
@@ -39,16 +39,6 @@ function Projects() {
       github: "https://github.com/sahilrawat432/Blog-App",
       tags: ["React", "Express", "MongoDB", "JWT"],
       inProgress: true,
-    },
-
-    {
-      title: "Portfolio Website",
-      description:
-        "My personal portfolio website built with React, TailwindCSS, and Framer Motion animations. It showcases my projects, skills, and contact info in an interactive and visually appealing way.",
-      img: "/portfolio-i.png",
-      live: "https://sahil-sr.vercel.app",
-      github: "https://github.com/Sahilrawat666/Portfolio.git",
-      tags: ["React", "Tailwind", "Framer Motion"],
     },
   ];
 

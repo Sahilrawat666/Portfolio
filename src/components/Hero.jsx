@@ -120,6 +120,14 @@ function Hero() {
                 Bookstore
               </a>
               <a
+                href="https://taskmanager-sr.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm text-emerald-600 hover:underline transition-all duration-300"
+              >
+                Task Manager
+              </a>
+              <a
                 href="https://blog-application-sr.vercel.app"
                 target="_blank"
                 rel="noreferrer"
