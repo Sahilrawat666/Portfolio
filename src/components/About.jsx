@@ -47,7 +47,10 @@ function About() {
             </h2>
             <div className="space-y-4 text-gray-700">
               <div>
-                <h3 className="font-semibold text-gray-900">BCA</h3>
+                <h3 className="font-semibold text-gray-900">
+                  BCA
+                  <span className="text-gray-400 italic">(Final year)</span>
+                </h3>
                 <p>Indira Gandhi National Open University — Ongoing</p>
               </div>
               <div>
@@ -93,11 +96,17 @@ function About() {
 
                   <li>
                     <span className="font-semibold">Bookstore App:</span> A
-                    full-featured e-commerce platform built with MERN stack.
-                    Users can register/login, browse books by category, add
-                    favorites, and manage a personal wishlist. Integrated secure
-                    authentication, dynamic book listings, and responsive UI for
-                    mobile and desktop. Deployed on Vercel.
+                    Developed a full-stack e-commerce bookstore using MongoDB,
+                    Express.js, React, and Node.js, implementing a complete
+                    purchase workflow including cart and “Buy Now” checkout
+                    flows. Built JWT-based authentication and designed REST APIs
+                    for order placement and user-specific order history.
+                    Engineered a persistent favorites system with backend
+                    storage and optimized state management using React Hooks and
+                    Context API. Integrated Axios for efficient API
+                    communication and used Tailwind CSS with Framer Motion to
+                    create a responsive and interactive user interface. Deployed
+                    the application on Vercel.
                     <a
                       href="https://Bookstore-sr.vercel.app"
                       target="_blank"

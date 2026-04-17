@@ -7,11 +7,21 @@ function Projects() {
     {
       title: "Bookstore App",
       description:
-        "A full-featured e-commerce platform built with MERN stack. Users can register/login, browse books by category, add favorites, and manage a personal wishlist. Integrated secure authentication, dynamic book listings, and responsive UI for mobile and desktop. Deployed on Vercel.",
+        "A MERN-based e-commerce bookstore built using MongoDB, Express.js, React, and Node.js, with real-world purchase flow implementation. Developed features like JWT-based user authentication, cart handling, and a persistent favorites system with backend storage. Implemented a “Buy Now” checkout flow separate from cart orders, along with order placement and order history tracking using REST APIs. Utilized React hooks and Context API for state management, Axios for API integration, Tailwind CSS for responsive UI, and Framer Motion for smooth animations and enhanced user experience. Deployed on Vercel.",
       img: "/bookstore-i.png",
       live: "https://bookstore-sr.vercel.app",
       github: "https://github.com/Sahilrawat666/bookstore.git",
-      tags: ["React.js", "MongoDB", "Express.js", "Node.js", "jwt", "Tailwind"],
+      tags: [
+        "Html5",
+        "Css3",
+        "Jawascript",
+        "React.js",
+        "Framer motion",
+        "MongoDB",
+        "Express.js",
+        "Node.js",
+        "Tailwind",
+      ],
     },
     {
       title: "Task Manager App",
@@ -21,13 +31,15 @@ function Projects() {
       live: "https://taskmanager-sr.vercel.app", // Live demo link
       github: "https://github.com/Sahilrawat666/task_manager_app", // GitHub repo
       tags: [
+        "Html5",
+        "Css3",
+        "Jawascript",
         "React.js",
         "Tailwind",
         "Vite",
         "Node.js",
         "MongoDB",
         "Express.js",
-        "jwt",
       ],
     },
     {
