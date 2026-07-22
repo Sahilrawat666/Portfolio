@@ -46,7 +46,7 @@ function Contact() {
             href="https://www.linkedin.com/in/sahil-rawat25?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noreferrer"
-            className="text-gray-700 text-3xl"
+            className="text-blue-700 text-3xl"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300 }}
