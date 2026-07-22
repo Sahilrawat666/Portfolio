@@ -15,15 +15,17 @@ function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-md font-semibold uppercase tracking-wide text-gray-500">
+          <p className="text-md font-bold font-serif uppercase tracking-wide text-gray-500">
             Hello, I'M
           </p>
           <h1 className="mt-2 text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight">
             Sahil <span className="text-emerald-600">Rawat</span>
           </h1>
-          <p className="mt-3 text-lg text-gray-700">Full Stack Developer</p>
+          <p className="mt-3 text-lg text-gray-700 font-serif font-bold">
+            Full Stack Developer
+          </p>
 
-          <p className="mt-5 text-base text-gray-600 max-w-xl leading-relaxed">
+          <p className="mt-5 text-base text-gray-600 max-w-xl leading-relaxed ">
             I am a passionate Full Stack Web Developer specializing in the
             <span className="font-semibold"> MERN stack</span>. I build
             responsive, high-performance web applications with a focus on clean
