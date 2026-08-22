@@ -43,14 +43,24 @@ function Projects() {
       ],
     },
     {
-      title: "Blog Application",
+      title: "Zenova E-commerce",
       description:
-        "A full-featured blog app with authentication, CRUD operations, and a clean UI.",
-      img: "/blog-i.png",
-      live: "https://blog-application-sr.vercel.app",
-      github: "https://github.com/sahilrawat432/Blog-App",
-      tags: ["React", "Express", "MongoDB", "JWT"],
-      inProgress: true,
+        "Zenova is a full-stack fashion e-commerce application built with the PERN stack (PostgreSQL, Express.js, React.js, and Node.js). It features secure user authentication with JWT and Google OAuth, protected routes, product browsing, search, cart and wishlist functionality, and a responsive modern UI. The backend follows a RESTful API architecture and uses PostgreSQL with the pg library for database operations, while Neon provides cloud-hosted PostgreSQL infrastructure.",
+      img: "/Zenova.png",
+      live: "https://zenova-sr.vercel.app",
+      github: "https://github.com/sahilrawat666/Zenova_E-Commerce",
+      tags: [
+        "Html5",
+        "Css3",
+        "Jawascript",
+        "SQL",
+        "React.js",
+        "Framer motion",
+        "PostgreSQL",
+        "Express.js",
+        "Node.js",
+        "Tailwind",
+      ],
     },
   ];
 
@@ -88,11 +98,11 @@ function Projects() {
               <div className="p-5 flex flex-col flex-1">
                 <h3 className="text-lg font-semibold text-gray-800 group-hover:text-emerald-600 transition-colors duration-300">
                   {project.title}
-                  {project.inProgress && (
+                  {/* {project.inProgress && (
                     <span className="text-gray-500 italic">(In progress)</span>
-                  )}
+                  )} */}
                 </h3>
-                <p className="mt-2 text-sm text-gray-600 flex-1">
+                <p className="mt-2 text-sm text-gray-600 flex-1 font-sans ">
                   {project.description}
                 </p>
 

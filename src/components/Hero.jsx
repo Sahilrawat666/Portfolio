@@ -114,6 +114,14 @@ function Hero() {
             {/* Project Links */}
             <div className="mt-5 flex justify-center gap-6">
               <a
+                href="https://zenova-sr.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm text-emerald-600 hover:underline transition-all duration-300 truncate"
+              >
+                Zenova
+              </a>
+              <a
                 href="https://Bookstore-sr.vercel.app"
                 target="_blank"
                 rel="noreferrer"
@@ -125,17 +133,9 @@ function Hero() {
                 href="https://taskmanager-sr.vercel.app"
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm text-emerald-600 hover:underline transition-all duration-300"
+                className="text-sm text-emerald-600 hover:underline transition-all duration-300 truncate"
               >
                 Task Manager
-              </a>
-              <a
-                href="https://blog-application-sr.vercel.app"
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm text-emerald-600 hover:underline transition-all duration-300"
-              >
-                Blog App
               </a>
             </div>
           </div>

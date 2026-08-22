@@ -19,6 +19,7 @@ import {
   SiVite,
   SiReactrouter,
   SiShadcnui,
+  SiPostgresql,
 } from "react-icons/si";
 
 function Skills() {
@@ -30,6 +31,7 @@ function Skills() {
         name: "JavaScript",
         icon: <SiJavascript className="text-yellow-400" />,
       },
+
       { name: "Media Query", icon: <SiCss3 className="text-blue-500" /> },
     ],
     "Libraries & Frameworks": [
@@ -55,6 +57,10 @@ function Skills() {
     ],
     Database: [
       { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
+      {
+        name: "PostgreSQL",
+        icon: <SiPostgresql className="text-blue-600" />,
+      },
     ],
     Tools: [
       { name: "Git", icon: <SiGit className="text-red-500" /> },
