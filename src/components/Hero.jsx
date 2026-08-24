@@ -1,148 +1,89 @@
-import React from "react";
 import { motion } from "framer-motion";
-// import profile from "../assets/profile.jpg";
+import { FiArrowDown } from "react-icons/fi";
 
 function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center bg-gradient-to-br from-gray-50 via-white to-gray-100 "
+      className="flex min-h-screen items-center py-24 lg:py-16"
     >
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-22 lg:mt-0">
-        {/* Left Content */}
+      <div className="w-full">
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <p className="text-md font-bold font-serif uppercase tracking-wide text-gray-500">
-            Hello, I'M
+          <p className="mb-5 font-mono text-sm text-[#64ffda]">
+            Hi, my name is
           </p>
-          <h1 className="mt-2 text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight">
-            Sahil <span className="text-emerald-600">Rawat</span>
+
+          <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-[#ccd6f6] sm:text-5xl md:text-6xl">
+            Sahil Rawat.
           </h1>
-          <p className="mt-3 text-lg text-gray-700 font-serif font-bold">
-            Full Stack Developer
-          </p>
 
-          <p className="mt-5 text-base text-gray-600 max-w-xl leading-relaxed ">
-            I am a passionate Full Stack Web Developer specializing in the
-            <span className="font-semibold"> MERN stack</span>. I build
-            responsive, high-performance web applications with a focus on clean
-            code, modern design, and intuitive user experiences. I enjoy
-            creating scalable projects, solving complex problems, and
-            continuously learning the latest web technologies.
-          </p>
-
-          {/* Buttons */}
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/projects"
-              className="px-5 py-2.5 rounded-xl border border-emerald-600 text-emerald-600 font-medium bg-white shadow hover:-translate-y-1 hover:shadow-md transition-transform duration-300"
-            >
-              View Projects
-            </a>
-            <a
-              href="#contact"
-              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#2dd4bf]  to-[#1f2937] text-white font-medium shadow hover:opacity-90 hover:-translate-y-1 transition-all duration-300"
-            >
-              Contact Me
-            </a>
-            <a
-              href="/Sahil_Rawat_Resume.pdf"
-              download
-              target="_blank"
-              className="px-5 py-2.5 rounded-xl border text-gray-700 bg-white shadow hover:bg-gray-200 hover:-translate-y-1 transition-all duration-300"
-            >
-              Download Resume
-            </a>
-          </div>
-
-          {/* Info */}
-          <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:gap-12 text-sm text-gray-600">
-            <div>
-              <div className="text-xs text-gray-500 ">Location</div>
-              <div className="whitespace-nowrap">Munirka, New Delhi</div>
-            </div>
-            <div>
-              <div className="text-xs text-gray-500">Email</div>
-              <div className="whitespace-nowrap">sr4328914@gmail.com</div>
-            </div>
-            <div>
-              <div className="text-xs text-gray-500">Phone</div>
-              <div className=" whitespace-nowrap">+91 7819099116</div>
-            </div>
-          </div>
+          <h2 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight text-[#8892b0] sm:text-4xl md:text-5xl">
+            I build things for the web.
+          </h2>
         </motion.div>
 
-        {/* Right - Profile Card */}
-        <div
-          className="flex justify-center md:justify-end "
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.2,
+            duration: 0.7,
+            ease: "easeOut",
+          }}
+          className="mt-7 max-w-xl text-base leading-7 text-[#8892b0] sm:text-lg"
         >
-          <div className="w-full max-w-sm rounded-2xl shadow-xl bg-white p-8 transform hover:-translate-y-2 transition-transform duration-500">
-            <img
-              src="/sahil-1.jpeg"
-              alt="Sahil"
-              className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-emerald-100 shadow 
-              
-             transform transition-transform duration-500 hover:scale-110 "
+          I&apos;m a full-stack developer focused on building reliable,
+          responsive, and user-friendly web applications. I work primarily with
+          the MERN and PERN stacks and enjoy turning ideas into production-ready
+          experiences.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.35,
+            duration: 0.7,
+            ease: "easeOut",
+          }}
+          className="mt-9 flex flex-wrap items-center gap-4"
+        >
+          <a
+            href="#projects"
+            className="group inline-flex items-center gap-3 border border-[#64ffda] px-6 py-3 font-mono text-xs text-[#64ffda] transition-all duration-300 hover:bg-[#64ffda]/10"
+          >
+            VIEW PROJECTS
+            <FiArrowDown
+              size={14}
+              className="transition-transform duration-300 group-hover:translate-y-1"
             />
-            <h3 className="mt-4 text-center text-lg font-semibold text-gray-800">
-              Sahil Rawat
-            </h3>
-            <p className="text-center text-sm text-gray-500">
-              BCA Student{" "}
-              <span className="text-gray-400 italic">(final year)</span> • Full
-              Stack Developer
-            </p>
+          </a>
 
-            <div className="mt-5 space-y-2 text-sm text-gray-700">
-              <div>
-                <strong>Education:</strong> BCA — Indira Gandhi National Open
-                University
-              </div>
-              <div>
-                <strong>Certification:</strong> Full Stack Web Development —
-                DICE Academy
-                <span className="text-gray-400 italic"> (Diploma)</span>
-              </div>
-            </div>
+          <a
+            href="#contact"
+            className="inline-flex items-center border border-[#233554] px-6 py-3 font-mono text-xs text-[#8892b0] transition-all duration-300 hover:border-[#64ffda] hover:text-[#64ffda]"
+          >
+            GET IN TOUCH
+          </a>
+        </motion.div>
 
-            {/* Project Links */}
-            <div className="mt-5 flex justify-center gap-6">
-              <a
-                href="https://zenova-sr.vercel.app"
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm text-emerald-600 hover:underline transition-all duration-300 truncate"
-              >
-                Zenova
-              </a>
-              <a
-                href="https://Bookstore-sr.vercel.app"
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm text-emerald-600 hover:underline transition-all duration-300"
-              >
-                Bookstore
-              </a>
-              <a
-                href="https://taskmanager-sr.vercel.app"
-                target="_blank"
-                rel="noreferrer"
-                className="text-sm text-emerald-600 hover:underline transition-all duration-300 truncate"
-              >
-                Task Manager
-              </a>
-            </div>
-          </div>
-        </div>
+        {/* Scroll indicator */}
+        <motion.a
+          href="#about"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.8 }}
+          className="mt-20 hidden items-center gap-3 font-mono text-[10px] tracking-[0.2em] text-[#495670] transition-colors hover:text-[#64ffda] lg:flex"
+        >
+          <span className="h-px w-10 bg-[#495670]" />
+          SCROLL TO EXPLORE
+        </motion.a>
       </div>
     </section>
   );
 }
-
 export default Hero;

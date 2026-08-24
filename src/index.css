@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #0a192f;
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+}
+
+::selection {
+    background: #64ffda;
+    color: #0a192f;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a192f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #233554;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64ffda;
+}
+
+a {
+    text-decoration: none;
+}
