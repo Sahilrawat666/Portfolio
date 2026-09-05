@@ -16,7 +16,7 @@ function Footer() {
 
         <p className="font-mono text-sm leading-5 text-[#8892b0]">
           Designed &amp; built by
-          <span className="text-[#ccd6f6]">Sahil Rawat</span>
+          <span className="text-[#ccd6f6]"> Sahil Rawat</span>
         </p>
 
         <p className="font-mono text-xs text-[#495670]">
