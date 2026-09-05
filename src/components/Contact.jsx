@@ -1,71 +1,90 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiMail, FiGithub, FiLinkedin, FiArrowUpRight } from "react-icons/fi";
+
+const contactLinks = [
+  {
+    label: "Email",
+    value: "your-email@example.com",
+    href: "mailto:your-email@example.com",
+    icon: FiMail,
+  },
+  {
+    label: "GitHub",
+    value: "github.com/Sahilrawat666",
+    href: "https://github.com/Sahilrawat666",
+    icon: FiGithub,
+  },
+  {
+    label: "LinkedIn",
+    value: "LinkedIn Profile",
+    href: "https://www.linkedin.com/",
+    icon: FiLinkedin,
+  },
+];
 
 function Contact() {
   return (
-    <section id="contact" className="bg-gray-50 px-6 py-24 lg:py-24">
-      <div className="max-w-4xl mx-auto flex flex-col gap-8 items-center">
-        {/* Title */}
-        <motion.h2
-          className="text-4xl md:text-5xl font-extrabold text-gray-900 text-center"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          Get in Touch
-        </motion.h2>
+    <section id="contact" className="scroll-mt-20 py-5 md:py-10 lg:py-15">
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6 }}
+        className="max-w-xl"
+      >
+        {/* Section heading */}
+        <div className="mb-10 flex items-center gap-4">
+          <span className="font-mono text-sm text-[#64ffda]">05.</span>
 
-        {/* Email Info */}
-        <motion.div
-          className="flex items-center gap-4 text-gray-700 text-lg md:text-xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 1 }}
-        >
-          <FaEnvelope className="text-emerald-600 text-2xl" />
-          <span>sr4328914@gmail.com</span>
-        </motion.div>
+          <h2 className="whitespace-nowrap text-xl font-bold tracking-tight text-[#ccd6f6]">
+            Get In Touch
+          </h2>
 
-        {/* Send Message Button */}
-        <motion.a
-          href="mailto:sr4328914@gmail.com"
-          className="mt-6 bg-gradient-to-r from-[#0f172a] to-[#334155] text-white font-semibold rounded-lg px-5 py-3  "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.04 }}
-          whileTap={{ scale: 0.95 }}
-          transition={{ type: "spring", stiffness: 300 }}
-        >
-          Send Message
-        </motion.a>
-
-        {/* Social Links */}
-        <div className="flex items-center gap-6 mt-6">
-          <motion.a
-            href="https://www.linkedin.com/in/sahil-rawat25?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-700 text-3xl"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <FaLinkedin />
-          </motion.a>
-          <motion.a
-            href="https://github.com/Sahilrawat666"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-700 text-3xl"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <FaGithub />
-          </motion.a>
+          <span className="h-px w-full max-w-xs bg-[#233554]" />
         </div>
-      </div>
+
+        <p className="text-sm leading-7 text-[#8892b0] sm:text-base">
+          I&apos;m currently open to new opportunities, collaborations, and
+          interesting projects. Whether you have a question or just want to say
+          hello, feel free to reach out.
+        </p>
+
+        {/* Contact links */}
+        <div className="mt-10 space-y-4">
+          {contactLinks.map((contact) => {
+            const Icon = contact.icon;
+
+            return (
+              <a
+                key={contact.label}
+                href={contact.href}
+                target={contact.label === "Email" ? undefined : "_blank"}
+                rel={contact.label === "Email" ? undefined : "noreferrer"}
+                className="group flex items-center justify-between border-b border-[#233554] py-4 transition-colors duration-300 hover:border-[#64ffda]"
+              >
+                <div className="flex items-center gap-4">
+                  <Icon size={18} className="text-[#64ffda]" />
+
+                  <div>
+                    <p className="font-mono text-xs text-[#64ffda]">
+                      {contact.label}
+                    </p>
+
+                    <p className="mt-1 text-sm text-[#8892b0] transition-colors duration-300 group-hover:text-[#ccd6f6]">
+                      {contact.value}
+                    </p>
+                  </div>
+                </div>
+
+                <FiArrowUpRight
+                  size={17}
+                  className="text-[#495670] transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-[#64ffda]"
+                />
+              </a>
+            );
+          })}
+        </div>
+      </motion.div>
     </section>
   );
 }

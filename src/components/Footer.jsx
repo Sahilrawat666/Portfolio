@@ -1,68 +1,27 @@
-import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 
 function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#0f172a]  to-[#334155] text-gray-300 py-10 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col items-center gap-8">
-        {/* Brand / Name */}
-        <div className="text-center">
-          <h3 className="text-2xl font-bold text-white">Sahil Rawat</h3>
-          <p className="text-gray-400">Full Stack Developer</p>
-        </div>
+    <footer className="border-t border-[#233554] py-10">
+      <div className="flex flex-col items-center gap-4 text-center">
+        <a
+          href="https://github.com/Sahilrawat666"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Visit Sahil Rawat on GitHub"
+          className="text-[#8892b0] transition-colors duration-300 hover:text-[#64ffda]"
+        >
+          <FiGithub size={18} />
+        </a>
 
-        {/* Quick Links */}
-        <div className="flex flex-wrap justify-center gap-8 text-sm font-medium">
-          <a
-            href="/"
-            className="hover:text-emerald-400 hover:scale-110 active:scale-90  duration-200"
-          >
-            Home
-          </a>
-          <a
-            href="/about"
-            className="hover:text-emerald-400 hover:scale-110 active:scale-90  duration-200"
-          >
-            About
-          </a>
-          <a
-            href="/projects"
-            className="hover:text-emerald-400 hover:scale-110 active:scale-90  duration-200"
-          >
-            Projects
-          </a>
-        </div>
+        <p className="font-mono text-[11px] leading-5 text-[#8892b0]">
+          Designed &amp; built by{" "}
+          <span className="text-[#ccd6f6]">Sahil Rawat</span>
+        </p>
 
-        {/* Social Links */}
-        <div className="flex gap-6 text-2xl">
-          <a
-            href="https://github.com/Sahilrawat666"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:scale-110 active:scale-90  duration-200"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/sahil-rawat25"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:scale-110 active:scale-90  duration-200"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="mailto:sr4328914@gmail.com"
-            className="hover:scale-110 active:scale-90  duration-200 "
-          >
-            <FaEnvelope />
-          </a>
-        </div>
-
-        {/* Copyright */}
-        <div className="pt-4 border-t border-gray-700 w-full text-center text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} Sahil Rawat. All rights reserved.
-        </div>
+        <p className="font-mono text-[10px] text-[#495670]">
+          Built with React · Tailwind CSS · Framer Motion
+        </p>
       </div>
     </footer>
   );

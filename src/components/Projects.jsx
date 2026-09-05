@@ -1,147 +1,191 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FiGithub, FiExternalLink, FiArrowUpRight } from "react-icons/fi";
+
+const projects = [
+  {
+    title: "Zenova",
+    description:
+      "A full-stack fashion e-commerce application with product browsing, authentication, shopping functionality, and a PostgreSQL-powered backend.",
+    image: "/Zenova.png",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Neon",
+      "JWT",
+    ],
+    github: "https://github.com/Sahilrawat666",
+    live: "https://zenova-sr.vercel.app",
+  },
+  {
+    title: "Bookstore",
+    description:
+      "A full-stack bookstore application featuring authentication, product browsing, search, favourites, cart functionality, and protected routes.",
+    image: "/bookstore-i.png",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+    ],
+    github: "https://github.com/Sahilrawat666",
+    live: "#",
+  },
+  {
+    title: "Task Manager",
+    description:
+      "A full-stack task management application designed to manage tasks efficiently with authentication, protected routes, and RESTful APIs.",
+    image: "/taskmanager-i.png",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT"],
+    github: "https://github.com/Sahilrawat666",
+    live: "#",
+  },
+  {
+    title: "Developer Portfolio",
+    description:
+      "A responsive personal portfolio showcasing my development skills, projects, experience, and technical journey.",
+    image: "/portfolio-i.png",
+    technologies: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/Sahilrawat666/Portfolio",
+    live: "https://sahil-sr.vercel.app",
+  },
+];
 
 function Projects() {
-  const projects = [
-    {
-      title: "Bookstore App",
-      description:
-        "A MERN-based e-commerce bookstore built using MongoDB, Express.js, React, and Node.js, with real-world purchase flow implementation. Developed features like JWT-based user authentication, cart handling, and a persistent favorites system with backend storage. Implemented a “Buy Now” checkout flow separate from cart orders, along with order placement and order history tracking using REST APIs. Utilized React hooks and Context API for state management, Axios for API integration, Tailwind CSS for responsive UI, and Framer Motion for smooth animations and enhanced user experience. Deployed on Vercel.",
-      img: "/bookstore-i.png",
-      live: "https://bookstore-sr.vercel.app",
-      github: "https://github.com/Sahilrawat666/bookstore.git",
-      tags: [
-        "Html5",
-        "Css3",
-        "Jawascript",
-        "React.js",
-        "Framer motion",
-        "MongoDB",
-        "Express.js",
-        "Node.js",
-        "Tailwind",
-      ],
-    },
-    {
-      title: "Task Manager App",
-      description:
-        "Built a task management application with authentication and dynamic task tracking features. Implements full CRUD operations, allowing users to create, read, update, and delete tasks efficiently. Users can update task status (e.g., To Do, In Progress, Completed) and manage their workflow through an intuitive interface. Developed using MongoDB, Express, React, and Node.js with Tailwind CSS for styling.",
-      img: "/taskmanager-i.png",
-      live: "https://taskmanager-sr.vercel.app", // Live demo link
-      github: "https://github.com/Sahilrawat666/task_manager_app", // GitHub repo
-      tags: [
-        "Html5",
-        "Css3",
-        "Jawascript",
-        "React.js",
-        "Tailwind",
-        "Vite",
-        "Node.js",
-        "MongoDB",
-        "Express.js",
-      ],
-    },
-    {
-      title: "Zenova E-commerce",
-      description:
-        "Zenova is a full-stack fashion e-commerce application built with the PERN stack (PostgreSQL, Express.js, React.js, and Node.js). It features secure user authentication with JWT and Google OAuth, protected routes, product browsing, search, cart and wishlist functionality, and a responsive modern UI. The backend follows a RESTful API architecture and uses PostgreSQL with the pg library for database operations, while Neon provides cloud-hosted PostgreSQL infrastructure.",
-      img: "/Zenova.png",
-      live: "https://zenova-sr.vercel.app",
-      github: "https://github.com/sahilrawat666/Zenova_E-Commerce",
-      tags: [
-        "Html5",
-        "Css3",
-        "Jawascript",
-        "SQL",
-        "React.js",
-        "Framer motion",
-        "PostgreSQL",
-        "Express.js",
-        "Node.js",
-        "Tailwind",
-      ],
-    },
-  ];
-
   return (
-    <section
-      id="projects"
-      className="min-h-screen bg-white px-6 py-20 shadow-md  border-gray-200 "
-    >
-      <div className="max-w-6xl mx-auto">
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center">
-          My Projects
-        </h2>
-        <p className="mt-5 text-gray-600 text-center max-w-2xl mx-auto text-xl leading-relaxed">
-          Some of the projects I&apos;ve built using modern technologies.
-        </p>
+    <section id="projects" className="scroll-mt-20 py-5 md:py-10 lg:py-15">
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ duration: 0.6 }}
+      >
+        {/* Section heading */}
+        <div className="mb-10 flex items-center gap-4">
+          <span className="font-mono text-sm text-[#64ffda]">04.</span>
 
-        {/* Projects Grid */}
-        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <h2 className="whitespace-nowrap text-xl font-bold tracking-tight text-[#ccd6f6]">
+            Projects
+          </h2>
+
+          <span className="h-px w-full max-w-xs bg-[#233554]" />
+        </div>
+
+        {/* Projects */}
+        <div className="space-y-16">
           {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              className="group bg-gray-50 rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-400 cursor-pointer flex flex-col h-full"
+            <motion.article
+              key={project.title}
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.15 }}
+              transition={{
+                delay: index * 0.05,
+                duration: 0.5,
+              }}
+              className="group grid gap-6 md:grid-cols-[180px_1fr]"
             >
-              {/* Image */}
-              <div className="overflow-hidden">
+              {/* Project image */}
+              <a
+                href={project.live !== "#" ? project.live : project.github}
+                target="_blank"
+                rel="noreferrer"
+                className="relative block h-28 overflow-hidden border border-[#233554] bg-[#112240] md:h-32"
+              >
                 <img
-                  src={project.img}
-                  alt={project.title}
-                  className="w-full h-52 object-cover transform group-hover:scale-105 transition-transform duration-400"
+                  src={project.image}
+                  alt={`${project.title} project preview`}
+                  className="h-full w-full object-cover opacity-70 grayscale transition-all duration-500 group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
                 />
-              </div>
 
-              {/* Content */}
-              <div className="p-5 flex flex-col flex-1">
-                <h3 className="text-lg font-semibold text-gray-800 group-hover:text-emerald-600 transition-colors duration-300">
-                  {project.title}
-                  {/* {project.inProgress && (
-                    <span className="text-gray-500 italic">(In progress)</span>
-                  )} */}
-                </h3>
-                <p className="mt-2 text-sm text-gray-600 flex-1 font-sans ">
+                <div className="absolute inset-0 bg-[#0a192f]/20 transition-colors duration-500 group-hover:bg-transparent" />
+              </a>
+
+              {/* Project information */}
+              <div>
+                <div className="flex items-start justify-between gap-4">
+                  <a
+                    href={project.live !== "#" ? project.live : project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group/title inline-flex items-center gap-2"
+                  >
+                    <h3 className="text-lg font-semibold text-[#ccd6f6] transition-colors duration-300 group-hover/title:text-[#64ffda]">
+                      {project.title}
+                    </h3>
+
+                    <FiArrowUpRight
+                      size={16}
+                      className="text-[#64ffda] transition-transform duration-300 group-hover/title:-translate-y-1 group-hover/title:translate-x-1"
+                    />
+                  </a>
+
+                  <div className="flex items-center gap-4">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`${project.title} GitHub repository`}
+                      className="text-[#8892b0] transition-colors hover:text-[#64ffda]"
+                    >
+                      <FiGithub size={18} />
+                    </a>
+
+                    {project.live !== "#" && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`${project.title} live website`}
+                        className="text-[#8892b0] transition-colors hover:text-[#64ffda]"
+                      >
+                        <FiExternalLink size={18} />
+                      </a>
+                    )}
+                  </div>
+                </div>
+
+                <p className="mt-3 text-sm leading-6 text-[#8892b0]">
                   {project.description}
                 </p>
 
-                {/* Tags */}
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {project.tags.map((tag, i) => (
-                    <span
-                      key={i}
-                      className="text-xs px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full"
+                {/* Technologies */}
+                <ul className="mt-5 flex flex-wrap gap-x-4 gap-y-2">
+                  {project.technologies.map((technology) => (
+                    <li
+                      key={technology}
+                      className="font-mono text-[11px] text-[#64ffda]"
                     >
-                      {tag}
-                    </span>
+                      {technology}
+                    </li>
                   ))}
-                </div>
-
-                {/* Buttons */}
-                <div className="mt-5 flex gap-4">
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 text-sm px-4 py-2 rounded-lg bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
-                  >
-                    <FaExternalLinkAlt /> Live
-                  </a>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 text-sm px-4 py-2 rounded-lg border border-gray-300 hover:border-emerald-600 hover:text-emerald-600 transition-colors"
-                  >
-                    <FaGithub /> Code
-                  </a>
-                </div>
+                </ul>
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
-      </div>
+
+        {/* More projects */}
+        <motion.a
+          href="https://github.com/Sahilrawat666?tab=repositories"
+          target="_blank"
+          rel="noreferrer"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="group mt-16 inline-flex items-center gap-2 font-mono text-xs text-[#64ffda]"
+        >
+          VIEW MORE PROJECTS
+          <FiArrowUpRight
+            size={14}
+            className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
+          />
+        </motion.a>
+      </motion.div>
     </section>
   );
 }

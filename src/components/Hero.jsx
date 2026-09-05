@@ -3,10 +3,7 @@ import { FiArrowDown } from "react-icons/fi";
 
 function Hero() {
   return (
-    <section
-      id="hero"
-      className="flex min-h-screen items-center py-24 lg:py-16"
-    >
+    <section id="hero" className="scroll-mt-20 py-5 md:py-10 lg:py-15">
       <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 25 }}

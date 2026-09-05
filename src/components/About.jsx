@@ -1,159 +1,75 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { FiExternalLink } from "react-icons/fi";
 
 function About() {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-100 px-6 py-20 lg:py-24">
-      <div className="max-w-6xl mx-auto flex flex-col gap-12">
-        {/* Title */}
-        <motion.h1
-          className="text-4xl md:text-5xl font-extrabold text-gray-900 text-center"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          About Me
-        </motion.h1>
+    <section id="about" className="scroll-mt-20 py-5 md:py-10 lg:py-15">
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6 }}
+      >
+        {/* Section heading */}
+        <div className="mb-10 flex items-center gap-4">
+          <span className="font-mono text-sm text-[#64ffda]">01.</span>
 
-        {/* Intro */}
-        <motion.p
-          className="text-gray-700 text-center max-w-3xl mx-auto leading-relaxed text-lg md:text-xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 1 }}
-        >
-          I'm{" "}
-          <span className="text-emerald-600 font-semibold">Sahil Rawat</span>, a
-          Full Stack Web Developer specializing in the MERN stack. I build
-          responsive, user-friendly web applications, focusing on clean code and
-          modern design. Experienced with HTML, CSS, JavaScript, Tailwind,
-          React, Node.js, Git, and deployment tools.
-        </motion.p>
+          <h2 className="whitespace-nowrap text-xl font-bold tracking-tight text-[#ccd6f6]">
+            About Me
+          </h2>
 
-        {/* Cards Container */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          {/* Education Card */}
-          <motion.div
-            className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transform hover:-translate-y-3 transition-all duration-500"
-            whileHover={{ scale: 1.03 }}
-          >
-            <h2 className="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-emerald-600 pb-2">
-              Education
-            </h2>
-            <div className="space-y-4 text-gray-700">
-              <div>
-                <h3 className="font-semibold text-gray-900">
-                  BCA
-                  <span className="text-gray-400 italic">(Final year)</span>
-                </h3>
-                <p>Indira Gandhi National Open University — Ongoing</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900">
-                  Full Stack Web Development{" "}
-                  <span className="text-gray-400 italic">(Diploma)</span>
-                </h3>
-                <p> 2025 | DICE Academy — Completed</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900"> Class 12th</h3>
-                <p>2023 | UK Board, Uttarakhand</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900"> Class 10th</h3>
-                <p>2021 | UK Board, Uttarakhand</p>
-              </div>
-            </div>
-          </motion.div>
+          <span className="h-px w-full max-w-xs bg-[#233554]" />
+        </div>
 
-          {/* Experience Card */}
-          <motion.div
-            className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transform hover:-translate-y-3 transition-all duration-500"
-            whileHover={{ scale: 1.03 }}
-          >
-            <h2 className="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-emerald-600 pb-2">
-              Experience{" "}
-              <span className="text-gray-500 italic text-[18px]">
-                (Fresher)
-              </span>
-            </h2>
-            <div className="space-y-4 text-gray-700">
-              <div>
-                <h3 className="font-semibold text-gray-900">
-                  Web Development Projects
-                </h3>
-                <p className="mt-1">
-                  Developed and deployed multiple web applications using the
-                  MERN stack:
-                </p>
-                <ul className="list-disc list-inside mt-2 space-y-1">
-                  {/* bookstore application  */}
+        {/* Content */}
+        <div className="space-y-5 text-sm leading-7 text-[#8892b0] sm:text-base">
+          <p>
+            I&apos;m a final-year BCA graduate and full-stack developer
+            passionate about building modern web applications that are
+            functional, responsive, and easy to use.
+          </p>
 
-                  <li>
-                    <span className="font-semibold">Bookstore App:</span> A
-                    Developed a full-stack e-commerce bookstore using MongoDB,
-                    Express.js, React, and Node.js, implementing a complete
-                    purchase workflow including cart and “Buy Now” checkout
-                    flows. Built JWT-based authentication and designed REST APIs
-                    for order placement and user-specific order history.
-                    Engineered a persistent favorites system with backend
-                    storage and optimized state management using React Hooks and
-                    Context API. Integrated Axios for efficient API
-                    communication and used Tailwind CSS with Framer Motion to
-                    create a responsive and interactive user interface. Deployed
-                    the application on Vercel.
-                    <a
-                      href="https://Bookstore-sr.vercel.app"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-emerald-600 hover:underline ml-1"
-                    >
-                      Live Demo
-                    </a>
-                  </li>
-                  <li>
-                    {/* task manager */}
-                    <span className="font-semibold">Task Manager App:</span> A
-                    full-stack task management application built using the MERN
-                    stack with secure authentication and full CRUD
-                    functionality. Users can create, update, and delete tasks,
-                    track status (To Do, In Progress, Completed), and manage
-                    workflows through a clean and responsive interface. Focused
-                    on RESTful APIs and efficient state management.
-                  </li>
+          <p>
+            My primary focus is the{" "}
+            <span className="text-[#ccd6f6]">MERN stack</span> — MongoDB,
+            Express.js, React, and Node.js. I&apos;ve also been working with
+            PostgreSQL and the{" "}
+            <span className="text-[#ccd6f6]">PERN stack</span> to strengthen my
+            understanding of relational databases and scalable backend
+            architecture.
+          </p>
 
-                  {/* blog application */}
-                  <li>
-                    <span className="font-semibold">Blog App:</span> Currently
-                    developing a full-stack blogging platform using the MERN
-                    stack. Users will be able to register/login, create, edit,
-                    and delete posts, comment on articles, and enjoy a
-                    responsive UI. Focused on clean code, authentication, and
-                    modern web design.{" "}
-                    <span className="text-gray-500 italic">(In progress)</span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900">
-                  Technical Skills
-                </h3>
-                <p className="mt-1">
-                  HTML5, CSS3, JavaScript, Tailwind CSS, Bootstrap, jQuery,
-                  Media Queries, Responsive Web Design React.js, Node.js,
-                  express.js, MongoDB, MERN Stack, Git/GitHub, Postman API,
-                  Vercel, Netlify, Render.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-        </motion.div>
-      </div>
+          <p>
+            I enjoy working across the full development process, from designing
+            responsive interfaces and building REST APIs to implementing
+            authentication, database integration, and deploying applications.
+          </p>
+
+          <p>
+            One of my current projects is{" "}
+            <a
+              href="https://zenova-sr.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center gap-1 text-[#64ffda] transition-colors hover:text-[#ccd6f6]"
+            >
+              Zenova
+              <FiExternalLink
+                size={13}
+                className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
+            </a>
+            , a full-stack fashion e-commerce application built with React,
+            Node.js, Express.js, and PostgreSQL.
+          </p>
+
+          <p>
+            Outside of coding, I&apos;m continuously learning new technologies
+            and improving my approach to writing clean, maintainable, and
+            production-ready code.
+          </p>
+        </div>
+      </motion.div>
     </section>
   );
 }
