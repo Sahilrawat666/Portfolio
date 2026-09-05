@@ -5,7 +5,6 @@ import {
   SiJavascript,
   SiPostgresql,
   SiReact,
-  SiVite,
   SiReactrouter,
   SiTailwindcss,
   SiBootstrap,
@@ -73,7 +72,7 @@ const skillGroups = [
     skills: [
       { name: "Git", icon: SiGit },
       { name: "GitHub", icon: SiGithub },
-      { name: "GitHub Actions(CI/CD)", icon: SiGithubactions },
+      { name: "GitHub Actions (CI/CD)", icon: SiGithubactions },
       { name: "Axios", icon: SiAxios },
       // { name: "VS Code", icon: SiVisualstudiocode },
       { name: "Postman", icon: SiPostman },

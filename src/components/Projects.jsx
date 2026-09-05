@@ -41,7 +41,7 @@ const projects = [
     image: "/taskmanager-i.png",
     technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT"],
     github: "https://github.com/Sahilrawat666/Task_Manager_App",
-    live: " https://taskmanager-sr.vercel.app",
+    live: "https://taskmanager-sr.vercel.app",
   },
 ];
 
