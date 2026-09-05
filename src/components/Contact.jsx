@@ -4,7 +4,7 @@ import { FiMail, FiGithub, FiLinkedin, FiArrowUpRight } from "react-icons/fi";
 const contactLinks = [
   {
     label: "Email",
-    value: "your-email@example.com",
+    value: "sr4328914@gmail.com",
     href: "mailto:sr4328914@gmail.com",
     icon: FiMail,
   },

@@ -57,7 +57,6 @@ function Experience() {
         <div className="flex flex-col gap-8 md:flex-row">
           {/* Tabs */}
           <div className="flex w-full overflow-x-auto border-b border-[#233554] md:block md:w-44 md:flex-shrink-0 md:overflow-visible md:border-b-0 md:border-l md:border-[#233554]">
-            {" "}
             {experiences.map((experience) => {
               const isActive = activeExperience.id === experience.id;
 

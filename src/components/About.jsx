@@ -24,16 +24,16 @@ function About() {
         {/* Content */}
         <div className="space-y-5 text-sm leading-7 text-[#8892b0] sm:text-base">
           <p>
-            I&apos;m a final-year BCA graduate and full-stack developer
-            passionate about building modern web applications that are
-            functional, responsive, and easy to use.
+            I&apos;m a BCA graduate and full-stack developer passionate about
+            building modern web applications that are functional, responsive,
+            and easy to use.
           </p>
 
           <p>
-            My primary focus is the{" "}
+            My primary focus is the
             <span className="text-[#ccd6f6]">MERN stack</span> — MongoDB,
             Express.js, React, and Node.js. I&apos;ve also been working with
-            PostgreSQL and the{" "}
+            PostgreSQL and the
             <span className="text-[#ccd6f6]">PERN stack</span> to strengthen my
             understanding of relational databases and scalable backend
             architecture.
@@ -46,7 +46,7 @@ function About() {
           </p>
 
           <p>
-            One of my current projects is{" "}
+            One of my current projects is
             <a
               href="https://zenova-sr.vercel.app"
               target="_blank"

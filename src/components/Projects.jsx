@@ -15,7 +15,7 @@ const projects = [
       "Neon",
       "JWT",
     ],
-    github: "https://github.com/Sahilrawat666",
+    github: "https://github.com/Sahilrawat666/Zenova_E-Commerce",
     live: "https://zenova-sr.vercel.app",
   },
   {
@@ -31,8 +31,8 @@ const projects = [
       "Mongoose",
       "JWT",
     ],
-    github: "https://github.com/Sahilrawat666",
-    live: "#",
+    github: "https://github.com/Sahilrawat666/bookstore",
+    live: "https://bookstore-sr.vercel.app",
   },
   {
     title: "Task Manager",
@@ -40,8 +40,8 @@ const projects = [
       "A full-stack task management application designed to manage tasks efficiently with authentication, protected routes, and RESTful APIs.",
     image: "/taskmanager-i.png",
     technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT"],
-    github: "https://github.com/Sahilrawat666",
-    live: "#",
+    github: "https://github.com/Sahilrawat666/Task_Manager_App",
+    live: " https://taskmanager-sr.vercel.app",
   },
 ];
 
