@@ -25,12 +25,12 @@ const socialLinks = [
   },
   {
     label: "LinkedIn",
-    href: "YOUR_LINKEDIN_URL",
+    href: "https://www.linkedin.com/in/sahil-rawat25",
     icon: <FiLinkedin />,
   },
   {
     label: "Email",
-    href: "mailto:YOUR_EMAIL",
+    href: "mailto:sr4328914@gmail.com",
     icon: <FiMail />,
   },
 ];
@@ -49,7 +49,7 @@ function Sidebar() {
         <a
           href="#home"
           onClick={closeMenu}
-          className="font-mono text-sm font-semibold tracking-wide text-[#64ffda]"
+          className="font-mono text-sm font-semibold tracking-wide text-[#ffffff]"
         >
           SR
         </a>
@@ -59,7 +59,7 @@ function Sidebar() {
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label={isOpen ? "Close navigation" : "Open navigation"}
           aria-expanded={isOpen}
-          className="relative z-[60] text-[#64ffda] transition-colors hover:text-[#ccd6f6]"
+          className="relative z-[60] text-[#ffffff] transition-colors hover:text-[#ccd6f6]"
         >
           {isOpen ? <FiX size={25} /> : <FiMenu size={25} />}
         </button>
@@ -102,9 +102,9 @@ function Sidebar() {
                       onClick={closeMenu}
                       className="group flex items-center gap-4 font-mono text-sm text-[#ccd6f6]"
                     >
-                      <span className="h-px w-6 bg-[#495670] transition-all duration-300 group-hover:w-10 group-hover:bg-[#64ffda]" />
+                      <span className="h-px w-6 bg-[#495670] transition-all duration-300 group-hover:w-10 group-hover:bg-[#ffffff]" />
 
-                      <span className="transition-colors duration-300 group-hover:text-[#64ffda]">
+                      <span className="transition-colors duration-300 group-hover:text-[#ffffff]">
                         {item.label}
                       </span>
                     </a>
@@ -120,7 +120,7 @@ function Sidebar() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.35 }}
-                className="mt-10 inline-flex w-fit items-center gap-2 border border-[#64ffda] px-5 py-3 font-mono text-xs text-[#64ffda] transition-colors hover:bg-[#64ffda]/10"
+                className="mt-10 inline-flex w-fit items-center gap-2 border border-[#ffffff] px-5 py-3 font-mono text-xs text-[#ffffff] transition-colors hover:bg-[#ffffff]/10"
               >
                 <FiFileText size={14} />
                 VIEW RESUME
@@ -134,7 +134,7 @@ function Sidebar() {
                     target={social.label === "Email" ? undefined : "_blank"}
                     rel={social.label === "Email" ? undefined : "noreferrer"}
                     aria-label={social.label}
-                    className="text-lg text-[#8892b0] transition-all duration-300 hover:-translate-y-1 hover:text-[#64ffda]"
+                    className="text-lg text-[#8892b0] transition-all duration-300 hover:-translate-y-1 hover:text-[#ffffff]"
                   >
                     {social.icon}
                   </a>
@@ -188,9 +188,9 @@ function Sidebar() {
                     href={item.href}
                     className="group flex w-fit items-center gap-4"
                   >
-                    <span className="h-px w-8 bg-[#495670] transition-all duration-300 group-hover:w-16 group-hover:bg-[#64ffda]" />
+                    <span className="h-px w-8 bg-[#495670] transition-all duration-300 group-hover:w-16 group-hover:bg-[#ffffff]" />
 
-                    <span className="font-mono text-xs tracking-widest text-[#8892b0] transition-colors duration-300 group-hover:text-[#64ffda]">
+                    <span className="font-mono text-xs tracking-widest text-[#8892b0] transition-colors duration-300 group-hover:text-[#ffffff]">
                       {item.label}
                     </span>
                   </a>
@@ -207,7 +207,7 @@ function Sidebar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="mt-10 inline-flex items-center gap-2 border-b border-[#64ffda] pb-1 font-mono text-xs text-[#64ffda] transition-all duration-300 hover:border-[#ccd6f6] hover:text-[#ccd6f6]"
+            className="mt-10 inline-flex items-center gap-2 border-b border-[#ffffff] pb-1 font-mono text-xs text-[#ffffff] transition-all duration-300 hover:border-[#ccd6f6] hover:text-[#ccd6f6]"
           >
             <FiFileText size={14} />
             VIEW RESUME
@@ -228,7 +228,7 @@ function Sidebar() {
               target={social.label === "Email" ? undefined : "_blank"}
               rel={social.label === "Email" ? undefined : "noreferrer"}
               aria-label={social.label}
-              className="text-xl text-[#8892b0] transition-all duration-300 hover:-translate-y-1 hover:text-[#64ffda]"
+              className="text-xl text-[#8892b0] transition-all duration-300 hover:-translate-y-1 hover:text-[#ffffff]"
             >
               {social.icon}
             </a>

@@ -5,7 +5,7 @@ const contactLinks = [
   {
     label: "Email",
     value: "your-email@example.com",
-    href: "mailto:your-email@example.com",
+    href: "mailto:sr4328914@gmail.com",
     icon: FiMail,
   },
   {
@@ -17,7 +17,7 @@ const contactLinks = [
   {
     label: "LinkedIn",
     value: "LinkedIn Profile",
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/sahil-rawat25",
     icon: FiLinkedin,
   },
 ];
@@ -34,7 +34,7 @@ function Contact() {
       >
         {/* Section heading */}
         <div className="mb-10 flex items-center gap-4">
-          <span className="font-mono text-sm text-[#64ffda]">05.</span>
+          <span className="font-mono text-sm text-[#ffffff]">05.</span>
 
           <h2 className="whitespace-nowrap text-xl font-bold tracking-tight text-[#ccd6f6]">
             Get In Touch
@@ -60,13 +60,13 @@ function Contact() {
                 href={contact.href}
                 target={contact.label === "Email" ? undefined : "_blank"}
                 rel={contact.label === "Email" ? undefined : "noreferrer"}
-                className="group flex items-center justify-between border-b border-[#233554] py-4 transition-colors duration-300 hover:border-[#64ffda]"
+                className="group flex items-center justify-between border-b border-[#233554] py-4 transition-colors duration-300 hover:border-[#ffffff]"
               >
                 <div className="flex items-center gap-4">
-                  <Icon size={18} className="text-[#64ffda]" />
+                  <Icon size={18} className="text-[#ffffff]" />
 
                   <div>
-                    <p className="font-mono text-xs text-[#64ffda]">
+                    <p className="font-mono text-xs text-[#ffffff]">
                       {contact.label}
                     </p>
 
@@ -78,7 +78,7 @@ function Contact() {
 
                 <FiArrowUpRight
                   size={17}
-                  className="text-[#495670] transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-[#64ffda]"
+                  className="text-[#495670] transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-[#ffffff]"
                 />
               </a>
             );

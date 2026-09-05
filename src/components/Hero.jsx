@@ -10,7 +10,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <p className="mb-5 font-mono text-sm text-[#64ffda]">
+          <p className="mb-3 ml-1 font-mono text-lg text-[#ffffff]">
             Hi, my name is
           </p>
 
@@ -51,7 +51,7 @@ function Hero() {
         >
           <a
             href="#projects"
-            className="group inline-flex items-center gap-3 border border-[#64ffda] px-6 py-3 font-mono text-xs text-[#64ffda] transition-all duration-300 hover:bg-[#64ffda]/10"
+            className="group inline-flex items-center gap-3 border rounded-4xl border-[#abb7b4] px-6 py-3 font-mono text-xs text-[#ffffff] transition-all duration-300 hover:bg-[#ffffff]/20"
           >
             VIEW PROJECTS
             <FiArrowDown
@@ -62,7 +62,7 @@ function Hero() {
 
           <a
             href="#contact"
-            className="inline-flex items-center border border-[#233554] px-6 py-3 font-mono text-xs text-[#8892b0] transition-all duration-300 hover:border-[#64ffda] hover:text-[#64ffda]"
+            className="inline-flex items-center border rounded-4xl border-[#233554] px-6 py-3 font-mono text-xs text-[#8892b0] transition-all duration-300 hover:bg-[#ffffff]/20 hover:text-[#ffffff]"
           >
             GET IN TOUCH
           </a>
@@ -74,7 +74,7 @@ function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="mt-20 hidden items-center gap-3 font-mono text-[10px] tracking-[0.2em] text-[#495670] transition-colors hover:text-[#64ffda] lg:flex"
+          className="mt-20 hidden items-center gap-3 font-mono text-[10px] tracking-[0.2em] text-[#495670] transition-colors hover:text-[#ffffff] lg:flex"
         >
           <span className="h-px w-10 bg-[#495670]" />
           SCROLL TO EXPLORE

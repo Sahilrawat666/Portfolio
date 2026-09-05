@@ -43,15 +43,6 @@ const projects = [
     github: "https://github.com/Sahilrawat666",
     live: "#",
   },
-  {
-    title: "Developer Portfolio",
-    description:
-      "A responsive personal portfolio showcasing my development skills, projects, experience, and technical journey.",
-    image: "/portfolio-i.png",
-    technologies: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/Sahilrawat666/Portfolio",
-    live: "https://sahil-sr.vercel.app",
-  },
 ];
 
 function Projects() {
@@ -65,7 +56,7 @@ function Projects() {
       >
         {/* Section heading */}
         <div className="mb-10 flex items-center gap-4">
-          <span className="font-mono text-sm text-[#64ffda]">04.</span>
+          <span className="font-mono text-sm text-[#ffffff]">04.</span>
 
           <h2 className="whitespace-nowrap text-xl font-bold tracking-tight text-[#ccd6f6]">
             Projects
@@ -113,13 +104,13 @@ function Projects() {
                     rel="noreferrer"
                     className="group/title inline-flex items-center gap-2"
                   >
-                    <h3 className="text-lg font-semibold text-[#ccd6f6] transition-colors duration-300 group-hover/title:text-[#64ffda]">
+                    <h3 className="text-lg font-semibold text-[#ccd6f6] transition-colors duration-300 group-hover/title:text-[#ffffff]">
                       {project.title}
                     </h3>
 
                     <FiArrowUpRight
                       size={16}
-                      className="text-[#64ffda] transition-transform duration-300 group-hover/title:-translate-y-1 group-hover/title:translate-x-1"
+                      className="text-[#ffffff] transition-transform duration-300 group-hover/title:-translate-y-1 group-hover/title:translate-x-1"
                     />
                   </a>
 
@@ -129,7 +120,7 @@ function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label={`${project.title} GitHub repository`}
-                      className="text-[#8892b0] transition-colors hover:text-[#64ffda]"
+                      className="text-[#8892b0] transition-colors hover:text-[#ffffff]"
                     >
                       <FiGithub size={18} />
                     </a>
@@ -140,7 +131,7 @@ function Projects() {
                         target="_blank"
                         rel="noreferrer"
                         aria-label={`${project.title} live website`}
-                        className="text-[#8892b0] transition-colors hover:text-[#64ffda]"
+                        className="text-[#8892b0] transition-colors hover:text-[#ffffff]"
                       >
                         <FiExternalLink size={18} />
                       </a>
@@ -157,7 +148,7 @@ function Projects() {
                   {project.technologies.map((technology) => (
                     <li
                       key={technology}
-                      className="font-mono text-[11px] text-[#64ffda]"
+                      className="font-mono text-xs text-[#ffffff]"
                     >
                       {technology}
                     </li>
@@ -177,7 +168,7 @@ function Projects() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="group mt-16 inline-flex items-center gap-2 font-mono text-xs text-[#64ffda]"
+          className="group mt-16 inline-flex items-center gap-2 font-mono text-xs text-[#ffffff]"
         >
           VIEW MORE PROJECTS
           <FiArrowUpRight

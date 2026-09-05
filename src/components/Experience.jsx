@@ -21,7 +21,7 @@ const experiences = [
     company: "DICE Academy",
     role: "Full-Stack Development Trainee",
     period: "Sep 2023 — Jan 2025",
-    website: "#",
+    website: "https://www.dice-academy.com",
     points: [
       "Completed a one-year Full-Stack Web Development program focused on modern frontend and backend technologies.",
       "Developed practical projects using React, Node.js, Express.js, MongoDB, and REST APIs.",
@@ -44,7 +44,7 @@ function Experience() {
       >
         {/* Section heading */}
         <div className="mb-10 flex items-center gap-4">
-          <span className="font-mono text-sm text-[#64ffda]">02.</span>
+          <span className="font-mono text-sm text-[#ffffff]">02.</span>
 
           <h2 className="whitespace-nowrap text-xl font-bold tracking-tight text-[#ccd6f6]">
             Experience
@@ -68,8 +68,8 @@ function Experience() {
                   onClick={() => setActiveExperience(experience)}
                   className={`relative min-w-max px-5 py-3 text-left font-mono text-xs transition-all duration-300 md:w-full md:border-l-2 md:px-5 ${
                     isActive
-                      ? "border-[#64ffda] bg-[#112240] text-[#64ffda]"
-                      : "border-transparent text-[#8892b0] hover:bg-[#112240]/50 hover:text-[#64ffda]"
+                      ? "border-[#ffffff] bg-[#112240] text-[#ffffff]"
+                      : "border-transparent text-[#8892b0] hover:bg-[#112240]/50 hover:text-[#ffffff]"
                   }`}
                 >
                   {experience.company}
@@ -91,11 +91,11 @@ function Experience() {
                 {activeExperience.role}
               </h3>
 
-              <span className="text-[#64ffda]">@</span>
+              <span className="text-[#ffffff]">@</span>
 
               <a
                 href={activeExperience.website}
-                className="group inline-flex items-center gap-1 text-lg font-medium text-[#64ffda] transition-colors hover:text-[#ccd6f6]"
+                className="group inline-flex items-center gap-1 text-lg font-medium text-[#ffffff] transition-colors hover:text-[#ccd6f6]"
               >
                 {activeExperience.company}
 
@@ -118,7 +118,7 @@ function Experience() {
                   key={point}
                   className="relative pl-6 text-sm leading-7 text-[#8892b0] sm:text-base"
                 >
-                  <span className="absolute left-0 top-3 text-[#64ffda]">
+                  <span className="absolute left-0 top-3 text-[#ffffff]">
                     ▹
                   </span>
 

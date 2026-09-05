@@ -73,7 +73,7 @@ const skillGroups = [
     skills: [
       { name: "Git", icon: SiGit },
       { name: "GitHub", icon: SiGithub },
-      { name: "GitHub Actions", icon: SiGithubactions },
+      { name: "GitHub Actions(CI/CD)", icon: SiGithubactions },
       { name: "Axios", icon: SiAxios },
       // { name: "VS Code", icon: SiVisualstudiocode },
       { name: "Postman", icon: SiPostman },
@@ -95,7 +95,7 @@ function Skills() {
       >
         {/* Section heading */}
         <div className="mb-10 flex items-center gap-4">
-          <span className="font-mono text-sm text-[#64ffda]">03.</span>
+          <span className="font-mono text-sm text-[#ffffff]">03.</span>
 
           <h2 className="whitespace-nowrap text-xl font-bold tracking-tight text-[#ccd6f6]">
             Skills
@@ -125,7 +125,7 @@ function Skills() {
               className="grid gap-4 sm:grid-cols-[125px_1fr]"
             >
               {/* Category */}
-              <h3 className="pt-1 font-mono text-xs uppercase tracking-wider text-[#64ffda]">
+              <h3 className="pt-1 font-mono text-xs uppercase tracking-wider text-[#ffffff]">
                 {group.title}
               </h3>
 
@@ -141,7 +141,7 @@ function Skills() {
                     >
                       <Icon
                         size={17}
-                        className="text-[#495670] transition-colors duration-300 group-hover:text-[#64ffda]"
+                        className="text-[#495670] transition-colors duration-300 group-hover:text-[#ffffff]"
                       />
 
                       <span>{skill.name}</span>

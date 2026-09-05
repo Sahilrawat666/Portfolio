@@ -12,7 +12,7 @@ function About() {
       >
         {/* Section heading */}
         <div className="mb-10 flex items-center gap-4">
-          <span className="font-mono text-sm text-[#64ffda]">01.</span>
+          <span className="font-mono text-sm text-[#ffffff]">01.</span>
 
           <h2 className="whitespace-nowrap text-xl font-bold tracking-tight text-[#ccd6f6]">
             About Me
@@ -51,7 +51,7 @@ function About() {
               href="https://zenova-sr.vercel.app"
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-1 text-[#64ffda] transition-colors hover:text-[#ccd6f6]"
+              className="group inline-flex items-center gap-1 text-[#ffffff] transition-colors hover:text-[#ccd6f6]"
             >
               Zenova
               <FiExternalLink
