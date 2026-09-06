@@ -8,6 +8,7 @@ import {
   FiMenu,
   FiX,
 } from "react-icons/fi";
+// import sahil from "../../public/sahil.png";
 
 const navItems = [
   { label: "ABOUT", href: "#about" },
@@ -46,13 +47,14 @@ function Sidebar() {
     <>
       {/* Mobile Header */}
       <header className="fixed left-0 top-0 z-50 flex w-full items-center justify-between border-b border-[#233554]/60 bg-[#0a192f]/90 px-6 py-5 backdrop-blur-md lg:hidden">
-        <a
-          href="#home"
+        <img
+          src="/sahil-1.jpeg"
+          alt="Sahil Rawat"
+          srcset=""
+          className="rounded-full w-8 h-8 object-contain cursor-pointer "
           onClick={closeMenu}
-          className="font-mono text-sm font-semibold tracking-wide text-[#ffffff]"
-        >
-          SR
-        </a>
+          href="#home"
+        />
 
         <button
           type="button"
@@ -61,7 +63,7 @@ function Sidebar() {
           aria-expanded={isOpen}
           className="relative z-[60] text-[#ffffff] transition-colors hover:text-[#ccd6f6]"
         >
-          {isOpen ? <FiX size={25} /> : <FiMenu size={25} />}
+          {isOpen ? <FiX size={22} /> : <FiMenu size={22} />}
         </button>
       </header>
 
